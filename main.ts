@@ -22,13 +22,15 @@ input.onButtonPressed(Button.B, function () {
     } else if (_1234 == 5) {
         basic.showString("5")
     } else if (_1234 == 6) {
-    	
+        basic.showString("6")
     } else if (_1234 == 7) {
-    	
+        basic.showString("7")
     } else if (_1234 == 8) {
-    	
+        basic.showString("8")
     } else if (_1234 == 9) {
-    	
+        basic.showString("9")
+    } else {
+        basic.showString("10")
     }
 })
 basic.forever(function () {
