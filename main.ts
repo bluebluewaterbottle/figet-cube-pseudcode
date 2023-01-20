@@ -1,4 +1,3 @@
-let _1234 = 0
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
         # # # # #
@@ -8,6 +7,12 @@ input.onButtonPressed(Button.A, function () {
         # # # # #
         `)
     basic.clearScreen()
+})
+input.onButtonPressed(Button.AB, function () {
+    for (let index = 0; index < 100; index++) {
+        basic.showIcon(IconNames.Happy)
+        basic.showIcon(IconNames.Sad)
+    }
 })
 input.onButtonPressed(Button.B, function () {
     _1234 = randint(0, 5)
@@ -33,6 +38,21 @@ input.onButtonPressed(Button.B, function () {
         basic.showString("10")
     }
 })
+input.onGesture(Gesture.Shake, function () {
+    basic.showString("Hello!")
+    basic.showString("How was your day?")
+    basic.showString("I hope it was good.")
+    basic.showString("Bye!")
+    basic.showIcon(IconNames.Happy)
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    for (let index = 0; index < 100; index++) {
+        basic.showIcon(IconNames.Heart)
+        basic.showIcon(IconNames.SmallHeart)
+    }
+})
+let _1234 = 0
+music.startMelody(music.builtInMelody(Melodies.Nyan), MelodyOptions.ForeverInBackground)
 basic.forever(function () {
 	
 })
