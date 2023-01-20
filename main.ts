@@ -53,6 +53,3 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 let _1234 = 0
 music.startMelody(music.builtInMelody(Melodies.Nyan), MelodyOptions.ForeverInBackground)
-basic.forever(function () {
-	
-})
