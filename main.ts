@@ -40,10 +40,19 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onGesture(Gesture.Shake, function () {
     basic.showString("Hello!")
+    basic.pause(100)
+    basic.clearScreen()
     basic.showString("How was your day?")
-    basic.showString("I hope it was good.")
-    basic.showString("Bye!")
+    basic.pause(100)
+    basic.clearScreen()
+    basic.showString("I hope it was good!")
+    basic.clearScreen()
+    basic.pause(100)
+    basic.showString(" Good Bye!")
+    basic.clearScreen()
+    basic.pause(100)
     basic.showIcon(IconNames.Happy)
+    basic.clearScreen()
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     for (let index = 0; index < 100; index++) {
@@ -52,5 +61,5 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     }
 })
 let _1234 = 0
-music.setVolume(76)
-music.startMelody(music.builtInMelody(Melodies.Nyan), MelodyOptions.ForeverInBackground)
+music.setVolume(179)
+music.playMelody("D F C E D F D G ", 120)
