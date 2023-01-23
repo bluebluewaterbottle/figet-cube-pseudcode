@@ -9,13 +9,13 @@ input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
 })
 input.onButtonPressed(Button.AB, function () {
-    for (let index = 0; index < 100; index++) {
+    for (let index = 0; index < 10; index++) {
         basic.showIcon(IconNames.Happy)
         basic.showIcon(IconNames.Sad)
     }
 })
 input.onButtonPressed(Button.B, function () {
-    _1234 = randint(0, 5)
+    _1234 = randint(0, 10)
     if (_1234 == 1) {
         basic.showString("1")
     } else if (_1234 == 2) {
@@ -55,7 +55,7 @@ input.onGesture(Gesture.Shake, function () {
     basic.clearScreen()
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    for (let index = 0; index < 100; index++) {
+    for (let index = 0; index < 10; index++) {
         basic.showIcon(IconNames.Heart)
         basic.showIcon(IconNames.SmallHeart)
     }
