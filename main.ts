@@ -51,8 +51,8 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     }
 })
 let _1234 = 0
-music.setVolume(179)
-music.playMelody("D F C E D F D G ", 120)
+music.setVolume(58)
+music.startMelody(music.builtInMelody(Melodies.Nyan), MelodyOptions.ForeverInBackground)
 basic.forever(function () {
     while (input.buttonIsPressed(Button.A)) {
         basic.showLeds(`
