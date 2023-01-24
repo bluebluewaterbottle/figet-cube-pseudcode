@@ -1,3 +1,4 @@
+let _1234 = 0
 input.onButtonPressed(Button.AB, function () {
     for (let index = 0; index < 10; index++) {
         basic.showIcon(IconNames.Happy)
@@ -50,9 +51,6 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
         basic.showIcon(IconNames.SmallHeart)
     }
 })
-let _1234 = 0
-music.setVolume(58)
-music.startMelody(music.builtInMelody(Melodies.Nyan), MelodyOptions.ForeverInBackground)
 basic.forever(function () {
     while (input.buttonIsPressed(Button.A)) {
         basic.showLeds(`
