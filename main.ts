@@ -1,13 +1,3 @@
-input.onButtonPressed(Button.A, function () {
-    basic.showLeds(`
-        # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
-        `)
-    basic.clearScreen()
-})
 input.onButtonPressed(Button.AB, function () {
     for (let index = 0; index < 10; index++) {
         basic.showIcon(IconNames.Happy)
@@ -63,3 +53,15 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 let _1234 = 0
 music.setVolume(179)
 music.playMelody("D F C E D F D G ", 120)
+basic.forever(function () {
+    while (input.buttonIsPressed(Button.A)) {
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `,0)
+    }
+    basic.clearScreen()
+})
